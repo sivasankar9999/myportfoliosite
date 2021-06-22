@@ -8,6 +8,8 @@ import MyNavbar from "./components/my-navbar/my-navbar.component"
 import MyCarousal from "./components/my-carousal/my-carousal.component"
 import TitleMessage from "./components/title-message/title-message.component"
 import About from './pages/about/about.component'
+import Skills from './pages/skills/skills.component' 
+
 import './App.css'
 
 const App=()=> {
@@ -31,6 +33,13 @@ const App=()=> {
       </Container>
       </Parallax>
       </div>
+
+      {/* skills section*/}
+      <Container className="container-box rounded">
+        <Fade duration={500}>
+      <Skills/>
+      </Fade>
+      </Container>
     </div>
   );
 }
